@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Arcane: League of Legends</title>
+        <link rel="icon" href="C:\Users\NKY\Documents\Bootcamp\Session2\arcaneicon.png">
+        <!--A1. rel attribute, A2. href attribute, A7. lang-->
+        <style>
+            .center{
+                display: block;
+                margin: auto;
+            }
+            body{
+                background-image: url(bg.png);
+            }
+        </style>
+    </head>
+    <body>
+        <!--A3. src attribute, A4. width & height, A5. alt-->
+        <img src="ARCNLOGO.png" width="360" height="113" class="center" alt="ArcaneLogo">
+        <!--B1. align attribute-->
+        <h1 align="center">Welcome, future Zaunites!</h1>
+        <section id="audio" align="center">
+            <p>
+                🎧 Now Playing: Curtis Harding ft. Jazmine Sullivan - <strong>Our Love</strong> <br> Arcane League of Legends | Riot Games Music
+            </p>
+        <!--B2. controls attribute for audio, B3. type attribute, B4. loop attribute-->
+            <audio controls loop>
+                <source src="OurLoveArcaneLeagueINST.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        <section id="option">
+            <h2 align="center">Pick a Side:</h2>
+        <!--A6. id attribute to table, A7. style-->
+            <table id="OptionTable" style="border: 1px solid black" align="center">
+                <caption>Are you a Chem-baron or a Firelight?</caption>
+                <thead style="border: 1px solid rgb(0, 0, 0)">
+                    <tr style="border: 1px solid black">
+                        <th style="border: 1px solid black">
+                            Chem-baron <br>
+                            <a href="arcn2chmbrns.html">
+                                <button align="center">Join the Chem-barons</button>
+                            </a>
+                        </th>
+                        <th style="border: 1px solid black">
+                            Firelight <br>
+                            <a href="arcn2frlghts.html">
+                                <button align="center">Join the Firelights</button>
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td style="border: 1px solid rgb(165, 45, 180)">
+                            <img src="chmbrns.png" width="300" height="300">
+                    </td>
+                    <td style="border: 1px solid rgb(39, 156, 98)">
+                            <img src="frlght.png" width="300" height="300">
+                    </td>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>
